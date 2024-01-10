@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031D70A72B4E2E4800A79B20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A62B4E2E4800A79B20 /* Kingfisher */; };
+		031D70AA2B4E317A00A79B20 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A92B4E317A00A79B20 /* Alamofire */; };
+		03DF38162B477A63009040AA /* DesertliousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38152B477A63009040AA /* DesertliousApp.swift */; };
+		03DF38182B477A63009040AA /* DesertliousTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38172B477A63009040AA /* DesertliousTabView.swift */; };
+		03DF381A2B477A65009040AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF38192B477A65009040AA /* Assets.xcassets */; };
+		03DF381D2B477A65009040AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF381C2B477A65009040AA /* Preview Assets.xcassets */; };
+		03DF38242B477D1F009040AA /* DessertliousListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38232B477D1F009040AA /* DessertliousListView.swift */; };
+		03DF38262B478E04009040AA /* DessertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38252B478E04009040AA /* DessertModel.swift */; };
+		03DF38282B479E22009040AA /* DessertsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38272B479E22009040AA /* DessertsListCell.swift */; };
+		03DF382A2B479F9A009040AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38292B479F9A009040AA /* NetworkManager.swift */; };
+		03DF382C2B48D46E009040AA /* DLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF382B2B48D46D009040AA /* DLError.swift */; };
+		03DF382E2B48E01C009040AA /* DessertliousListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF382D2B48E01B009040AA /* DessertliousListViewModel.swift */; };
+		03DF38302B48E33E009040AA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF382F2B48E33E009040AA /* Alert.swift */; };
+		03DF38392B491BD6009040AA /* DessertsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38382B491BD6009040AA /* DessertsDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03DF38122B477A63009040AA /* Desertlious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desertlious.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF38152B477A63009040AA /* DesertliousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertliousApp.swift; sourceTree = "<group>"; };
+		03DF38172B477A63009040AA /* DesertliousTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertliousTabView.swift; sourceTree = "<group>"; };
+		03DF38192B477A65009040AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03DF381C2B477A65009040AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03DF38232B477D1F009040AA /* DessertliousListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertliousListView.swift; sourceTree = "<group>"; };
+		03DF38252B478E04009040AA /* DessertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertModel.swift; sourceTree = "<group>"; };
+		03DF38272B479E22009040AA /* DessertsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsListCell.swift; sourceTree = "<group>"; };
+		03DF38292B479F9A009040AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		03DF382B2B48D46D009040AA /* DLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLError.swift; sourceTree = "<group>"; };
+		03DF382D2B48E01B009040AA /* DessertliousListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertliousListViewModel.swift; sourceTree = "<group>"; };
+		03DF382F2B48E33E009040AA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		03DF38382B491BD6009040AA /* DessertsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DF380F2B477A63009040AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031D70A72B4E2E4800A79B20 /* Kingfisher in Frameworks */,
+				031D70AA2B4E317A00A79B20 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DF38092B477A63009040AA = {
+			isa = PBXGroup;
+			children = (
+				03DF38142B477A63009040AA /* Desertlious */,
+				03DF38132B477A63009040AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03DF38132B477A63009040AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DF38122B477A63009040AA /* Desertlious.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DF38142B477A63009040AA /* Desertlious */ = {
+			isa = PBXGroup;
+			children = (
+				03DF38152B477A63009040AA /* DesertliousApp.swift */,
+				03DF38332B49196F009040AA /* Screens */,
+				03DF38352B491A7E009040AA /* Utilities */,
+				03DF38362B491AC3009040AA /* Model */,
+				03DF381B2B477A65009040AA /* Preview Content */,
+				03DF38192B477A65009040AA /* Assets.xcassets */,
+			);
+			path = Desertlious;
+			sourceTree = "<group>";
+		};
+		03DF381B2B477A65009040AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03DF381C2B477A65009040AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03DF38332B49196F009040AA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				03DF38172B477A63009040AA /* DesertliousTabView.swift */,
+				03DF38342B491984009040AA /* DessertsListView */,
+				03DF38372B491BA4009040AA /* DessertsDetailsView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		03DF38342B491984009040AA /* DessertsListView */ = {
+			isa = PBXGroup;
+			children = (
+				03DF382D2B48E01B009040AA /* DessertliousListViewModel.swift */,
+				03DF38232B477D1F009040AA /* DessertliousListView.swift */,
+				03DF38272B479E22009040AA /* DessertsListCell.swift */,
+			);
+			path = DessertsListView;
+			sourceTree = "<group>";
+		};
+		03DF38352B491A7E009040AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				03DF382F2B48E33E009040AA /* Alert.swift */,
+				03DF382B2B48D46D009040AA /* DLError.swift */,
+				03DF38292B479F9A009040AA /* NetworkManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		03DF38362B491AC3009040AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03DF38252B478E04009040AA /* DessertModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DF38372B491BA4009040AA /* DessertsDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				03DF38382B491BD6009040AA /* DessertsDetailsView.swift */,
+			);
+			path = DessertsDetailsView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03DF38112B477A63009040AA /* Desertlious */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF38202B477A65009040AA /* Build configuration list for PBXNativeTarget "Desertlious" */;
+			buildPhases = (
+				03DF380E2B477A63009040AA /* Sources */,
+				03DF380F2B477A63009040AA /* Frameworks */,
+				03DF38102B477A63009040AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Desertlious;
+			packageProductDependencies = (
+				031D70A62B4E2E4800A79B20 /* Kingfisher */,
+				031D70A92B4E317A00A79B20 /* Alamofire */,
+			);
+			productName = Desertlious;
+			productReference = 03DF38122B477A63009040AA /* Desertlious.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DF380A2B477A63009040AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					03DF38112B477A63009040AA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 03DF380D2B477A63009040AA /* Build configuration list for PBXProject "Desertlious" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03DF38092B477A63009040AA;
+			packageReferences = (
+				031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 03DF38132B477A63009040AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DF38112B477A63009040AA /* Desertlious */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DF38102B477A63009040AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF381D2B477A65009040AA /* Preview Assets.xcassets in Resources */,
+				03DF381A2B477A65009040AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DF380E2B477A63009040AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF38302B48E33E009040AA /* Alert.swift in Sources */,
+				03DF382E2B48E01C009040AA /* DessertliousListViewModel.swift in Sources */,
+				03DF382A2B479F9A009040AA /* NetworkManager.swift in Sources */,
+				03DF38182B477A63009040AA /* DesertliousTabView.swift in Sources */,
+				03DF38162B477A63009040AA /* DesertliousApp.swift in Sources */,
+				03DF382C2B48D46E009040AA /* DLError.swift in Sources */,
+				03DF38392B491BD6009040AA /* DessertsDetailsView.swift in Sources */,
+				03DF38282B479E22009040AA /* DessertsListCell.swift in Sources */,
+				03DF38262B478E04009040AA /* DessertModel.swift in Sources */,
+				03DF38242B477D1F009040AA /* DessertliousListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03DF381E2B477A65009040AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03DF381F2B477A65009040AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03DF38212B477A65009040AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Desertlious/Preview Content\"";
+				DEVELOPMENT_TEAM = PV9SRDAQY6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreeya.fetch.Desertlious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03DF38222B477A65009040AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Desertlious/Preview Content\"";
+				DEVELOPMENT_TEAM = PV9SRDAQY6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreeya.fetch.Desertlious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DF380D2B477A63009040AA /* Build configuration list for PBXProject "Desertlious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF381E2B477A65009040AA /* Debug */,
+				03DF381F2B477A65009040AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DF38202B477A65009040AA /* Build configuration list for PBXNativeTarget "Desertlious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF38212B477A65009040AA /* Debug */,
+				03DF38222B477A65009040AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+		031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		031D70A62B4E2E4800A79B20 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		031D70A92B4E317A00A79B20 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03DF380A2B477A63009040AA /* Project object */;
+}
