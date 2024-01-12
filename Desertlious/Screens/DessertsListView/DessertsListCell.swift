@@ -15,7 +15,7 @@ struct DessertsListCell: View {
             .font(.system(size: 22))
             .fontWeight(.semibold)
             .padding(8)
-            .background(.black.opacity(0.4))
+            .background(.secondary.opacity(0.8))
             .cornerRadius(4)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 60)
@@ -24,7 +24,4 @@ struct DessertsListCell: View {
     }
 }
 
-#Preview {
-    DessertsListCell(value: MealModel(strMeal: "idk", strMealThumb: "https://www.youtube.com/watch?v=6R8ffRRJcrg", idMeal: "111"))
-}
 

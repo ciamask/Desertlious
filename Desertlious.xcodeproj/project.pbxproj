@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031D70A72B4E2E4800A79B20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A62B4E2E4800A79B20 /* Kingfisher */; };
-		031D70AA2B4E317A00A79B20 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A92B4E317A00A79B20 /* Alamofire */; };
 		031D70B42B4FC46200A79B20 /* DessertsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D70B32B4FC46200A79B20 /* DessertsDetailsViewModel.swift */; };
 		031D70B62B50DF8300A79B20 /* DessertsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D70B52B50DF8300A79B20 /* DessertsListModel.swift */; };
 		03DF38162B477A63009040AA /* DesertliousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38152B477A63009040AA /* DesertliousApp.swift */; };
@@ -27,6 +25,7 @@
 /* Begin PBXFileReference section */
 		031D70B32B4FC46200A79B20 /* DessertsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsDetailsViewModel.swift; sourceTree = "<group>"; };
 		031D70B52B50DF8300A79B20 /* DessertsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsListModel.swift; sourceTree = "<group>"; };
+		031D70B72B510D2300A79B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		03DF38122B477A63009040AA /* Desertlious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desertlious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DF38152B477A63009040AA /* DesertliousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertliousApp.swift; sourceTree = "<group>"; };
 		03DF38192B477A65009040AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,8 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031D70A72B4E2E4800A79B20 /* Kingfisher in Frameworks */,
-				031D70AA2B4E317A00A79B20 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +70,10 @@
 		03DF38142B477A63009040AA /* Desertlious */ = {
 			isa = PBXGroup;
 			children = (
-				03DF38152B477A63009040AA /* DesertliousApp.swift */,
+				031D70B72B510D2300A79B20 /* Info.plist */,
 				03DF38332B49196F009040AA /* Screens */,
-				03DF38352B491A7E009040AA /* Utilities */,
 				03DF38362B491AC3009040AA /* Model */,
+				03DF38352B491A7E009040AA /* Utilities */,
 				03DF381B2B477A65009040AA /* Preview Content */,
 				03DF38192B477A65009040AA /* Assets.xcassets */,
 			);
@@ -86,6 +83,7 @@
 		03DF381B2B477A65009040AA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				03DF38152B477A63009040AA /* DesertliousApp.swift */,
 				03DF381C2B477A65009040AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -155,8 +153,6 @@
 			);
 			name = Desertlious;
 			packageProductDependencies = (
-				031D70A62B4E2E4800A79B20 /* Kingfisher */,
-				031D70A92B4E317A00A79B20 /* Alamofire */,
 			);
 			productName = Desertlious;
 			productReference = 03DF38122B477A63009040AA /* Desertlious.app */;
@@ -187,8 +183,6 @@
 			);
 			mainGroup = 03DF38092B477A63009040AA;
 			packageReferences = (
-				031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 03DF38132B477A63009040AA /* Products */;
 			projectDirPath = "";
@@ -363,9 +357,9 @@
 				DEVELOPMENT_TEAM = PV9SRDAQY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Desertlious/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,9 +386,9 @@
 				DEVELOPMENT_TEAM = PV9SRDAQY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Desertlious/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,38 +426,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.10.1;
-			};
-		};
-		031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		031D70A62B4E2E4800A79B20 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 031D70A52B4E2E4800A79B20 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		031D70A92B4E317A00A79B20 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 031D70A82B4E317A00A79B20 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03DF380A2B477A63009040AA /* Project object */;
 }

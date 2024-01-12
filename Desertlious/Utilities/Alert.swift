@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// Alert for different API errors
+
 struct AlertItems: Identifiable {
     let id = UUID()
     let title: Text

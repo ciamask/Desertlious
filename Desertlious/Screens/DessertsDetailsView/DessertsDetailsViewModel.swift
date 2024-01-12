@@ -12,10 +12,9 @@ class DessertsDetailsViewModel: ObservableObject {
     @Published var dessertsDetail: DessertModel = DessertModel.mockData
     @Published var alertItem: AlertItems?
     @Published var isLoading = true
-    @State var ingredientsList = [EnumeratedSequence<[String?]>.Element]()
 
     func getDessertsDetail(mealID: String) {
-        
+    
         NetworkManager.shared.getAppetizersDetail(mealID: mealID) { results in
             DispatchQueue.main.async {
                 self.isLoading = false

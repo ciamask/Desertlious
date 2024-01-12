@@ -20,7 +20,7 @@ struct DessertliousListView: View {
                         NavigationLink (destination:DessertsDetailsView(meal: value)){EmptyView()}.buttonStyle(PlainButtonStyle())
                     }
                 }.listStyle(.grouped)
-                .navigationTitle("Desserts")
+                    .navigationTitle("Desserts")
             }.onAppear {
                 viewModel.getDesserts()
             }
@@ -37,7 +37,7 @@ struct DessertliousListView: View {
             
         }
     }
-
+    
 }
 
 #Preview {
