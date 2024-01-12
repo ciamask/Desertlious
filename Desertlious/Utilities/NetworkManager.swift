@@ -17,7 +17,7 @@ final class NetworkManager {
     
     private init() {}
     
-    func getAppetizers(completed: @escaping (Result<[Meal], DLError>) -> Void) {
+    func getAppetizers(completed: @escaping (Result<[MealModel], DLError>) -> Void) {
         guard let url = URL(string: dessertsListURL) else {
             completed(.failure(.invalidURL))
             return
@@ -41,7 +41,7 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(DessertsList.self, from: data)
+                let decodedResponse = try decoder.decode(DessertsListModel.self, from: data)
                 completed(.success(decodedResponse.meals))
             } catch {
                 completed(.failure(.invalidData))
@@ -52,7 +52,7 @@ final class NetworkManager {
     }
     
     
-    func getAppetizersDetail(mealID: String, completed: @escaping (Result<[Dessert], DLError>) -> Void) {
+    func getAppetizersDetail(mealID: String, completed: @escaping (Result<[DessertModel], DLError>) -> Void) {
         let dessertsDetailURL = dessertsDetailURL + mealID
         guard let url = URL(string: dessertsDetailURL) else {
             completed(.failure(.invalidURL))

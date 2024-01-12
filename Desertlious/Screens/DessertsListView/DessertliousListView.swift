@@ -10,28 +10,19 @@ import SwiftUI
 struct DessertliousListView: View {
     
     @StateObject var viewModel = DessertliousListViewModel()
-    @State private var isShowingDetail = false
     
     var body: some View {
         ZStack {
             NavigationView {
                 List(viewModel.dessertsList, id: \.idMeal) { value in
-                    DessertsListCell(value: value)
-                        .onTapGesture {
-                            viewModel.getDessertsDetail(mealID: value.idMeal)
-                            isShowingDetail = true
-                        }
+                    ZStack {
+                        DessertsListCell(value: value)
+                        NavigationLink (destination:DessertsDetailsView(meal: value)){EmptyView()}.buttonStyle(PlainButtonStyle())
+                    }
                 }.listStyle(.grouped)
                 .navigationTitle("Desserts")
-                .disabled(isShowingDetail)
             }.onAppear {
                 viewModel.getDesserts()
-            }
-            .blur(radius: isShowingDetail ? 20 : 0)
-            
-            if isShowingDetail {
-                DessertsDetailsView(value: viewModel.dessertsDetail.first ?? MockData.sampleData,
-                                    isShowingDetail: $isShowingDetail)
             }
             
             if viewModel.isLoading {

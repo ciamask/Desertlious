@@ -8,8 +8,8 @@
 import SwiftUI
 
 class DessertliousListViewModel: ObservableObject {
-    @Published var dessertsList = [Meal]()
-    @Published var dessertsDetail = [Dessert]()
+    @Published var dessertsList = [MealModel]()
+    @Published var dessertsDetail = [DessertModel]()
     @Published var alertItem: AlertItems?
     @Published var isLoading = false
     var mealID = ""
@@ -21,7 +21,7 @@ class DessertliousListViewModel: ObservableObject {
                 self.isLoading = false
                 switch results {
                 case .success(let desserts):
-                    self.dessertsList = desserts
+                    self.dessertsList = desserts.sorted { $0.strMeal < $1.strMeal }
                 case .failure(let error):
                     switch error {
                     case .invalidURL:

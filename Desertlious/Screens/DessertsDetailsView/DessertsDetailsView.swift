@@ -9,77 +9,56 @@ import SwiftUI
 
 struct DessertsDetailsView: View {
     
-    let value: Dessert
-    @State var ingredientsList = [EnumeratedSequence<[String?]>.Element]()
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
-    @Binding var isShowingDetail: Bool
+    let meal: MealModel
+    let columns: [GridItem] = [GridItem(.flexible())]
+    @StateObject var viewModel = DessertsDetailsViewModel()
     
     var body: some View {
         VStack{
-            HStack{
-                Spacer()
-                Button {
-                    isShowingDetail = false
-                } label: {
-                    Image(systemName: "multiply")
-                        .resizable()
-                        .frame(width: 16, height: 16)
-                        .padding()
-                }
-            }
             ScrollView {
                 VStack(spacing: 12) {
-                    Text(value.strMeal ?? "")
-                        .font(.title)
-                        .fontWeight(.medium)
-                    AsyncImage(url: URL(string: value.strMealThumb ?? ""), scale: 2)
+                    AsyncImage(url: URL(string: viewModel.dessertsDetail.strMealThumb), scale: 2)
                         .aspectRatio(contentMode: .fit)
                     Text("Ingredients: ")
                         .font(.title2)
                         .fontWeight(.medium)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     LazyVGrid(columns: columns) {
-                        ForEach(ingredientsList, id: \.offset) { value in
-                            Text(value.element ?? "")
+                        ForEach(Array(zip(viewModel.dessertsDetail.ingredients.indices, viewModel.dessertsDetail.ingredients)), id: \.0) {index, ingredient in
+                            if let ingredient = ingredient, !ingredient.isEmpty {
+                                HStack {
+                                    Text(ingredient)
+                                    Text("-")
+                                    Text(viewModel.dessertsDetail.measurements[index] ?? "")
+                                    Spacer()
+                            }
+                            }
                         }
                     }
+                    .padding()
+                    .background(.secondary.opacity(0.2))
+                    .cornerRadius(8)
                     Text("Description")
                         .font(.title2)
                         .fontWeight(.medium)
-                    Text(value.strInstructions ?? "")
-                        .foregroundStyle(.secondary)
-                        .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Text(viewModel.dessertsDetail.strInstructions)
+                        .padding()
+                        .background(.secondary.opacity(0.2))
+                        .cornerRadius(8)
                 }
-                .padding(.horizontal)
+                .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
                 .onAppear {
-                    createEnumuratedValues()
+                    viewModel.getDessertsDetail(mealID: meal.idMeal)
                 }
             }
-        }.background(.white)
+        }.navigationTitle(meal.strMeal)
+        if viewModel.isLoading {
+            ProgressView("Downloading…")
+        }
     }
     
-    func createEnumuratedValues() {
-        let x = [value.strIngredient1,  value.strMeasure1,
-                 value.strIngredient2,  value.strMeasure2,
-                 value.strIngredient3,  value.strMeasure3,
-                 value.strIngredient4,  value.strMeasure4,
-                 value.strIngredient5,  value.strMeasure5,
-                 value.strIngredient6,  value.strMeasure6,
-                 value.strIngredient7,  value.strMeasure7,
-                 value.strIngredient8,  value.strMeasure8,
-                 value.strIngredient9,  value.strMeasure9,
-                 value.strIngredient10, value.strMeasure10,
-                 value.strIngredient11, value.strMeasure11,
-                 value.strIngredient12, value.strMeasure12,
-                 value.strIngredient13, value.strMeasure13,
-                 value.strIngredient14, value.strMeasure14,
-                 value.strIngredient15, value.strMeasure15,
-                 value.strIngredient16, value.strMeasure16,
-                 value.strIngredient17, value.strMeasure17,
-                 value.strIngredient18, value.strMeasure18,
-                 value.strIngredient19, value.strMeasure19,
-                 value.strIngredient20, value.strMeasure20]
-        let p = x.filter{ ($0 ?? "") != " " && !($0 ?? "").isEmpty }
-        let xp = Array(p.enumerated())
-        self.ingredientsList = xp
-    }
+    
 }
+
+

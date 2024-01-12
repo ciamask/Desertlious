@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		031D70A72B4E2E4800A79B20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A62B4E2E4800A79B20 /* Kingfisher */; };
 		031D70AA2B4E317A00A79B20 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 031D70A92B4E317A00A79B20 /* Alamofire */; };
+		031D70B42B4FC46200A79B20 /* DessertsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D70B32B4FC46200A79B20 /* DessertsDetailsViewModel.swift */; };
+		031D70B62B50DF8300A79B20 /* DessertsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D70B52B50DF8300A79B20 /* DessertsListModel.swift */; };
 		03DF38162B477A63009040AA /* DesertliousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38152B477A63009040AA /* DesertliousApp.swift */; };
-		03DF38182B477A63009040AA /* DesertliousTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38172B477A63009040AA /* DesertliousTabView.swift */; };
 		03DF381A2B477A65009040AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF38192B477A65009040AA /* Assets.xcassets */; };
 		03DF381D2B477A65009040AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF381C2B477A65009040AA /* Preview Assets.xcassets */; };
 		03DF38242B477D1F009040AA /* DessertliousListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF38232B477D1F009040AA /* DessertliousListView.swift */; };
@@ -24,9 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031D70B32B4FC46200A79B20 /* DessertsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsDetailsViewModel.swift; sourceTree = "<group>"; };
+		031D70B52B50DF8300A79B20 /* DessertsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsListModel.swift; sourceTree = "<group>"; };
 		03DF38122B477A63009040AA /* Desertlious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desertlious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DF38152B477A63009040AA /* DesertliousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertliousApp.swift; sourceTree = "<group>"; };
-		03DF38172B477A63009040AA /* DesertliousTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertliousTabView.swift; sourceTree = "<group>"; };
 		03DF38192B477A65009040AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03DF381C2B477A65009040AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03DF38232B477D1F009040AA /* DessertliousListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertliousListView.swift; sourceTree = "<group>"; };
@@ -92,7 +94,6 @@
 		03DF38332B49196F009040AA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				03DF38172B477A63009040AA /* DesertliousTabView.swift */,
 				03DF38342B491984009040AA /* DessertsListView */,
 				03DF38372B491BA4009040AA /* DessertsDetailsView */,
 			);
@@ -123,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				03DF38252B478E04009040AA /* DessertModel.swift */,
+				031D70B52B50DF8300A79B20 /* DessertsListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				03DF38382B491BD6009040AA /* DessertsDetailsView.swift */,
+				031D70B32B4FC46200A79B20 /* DessertsDetailsViewModel.swift */,
 			);
 			path = DessertsDetailsView;
 			sourceTree = "<group>";
@@ -216,13 +219,14 @@
 				03DF38302B48E33E009040AA /* Alert.swift in Sources */,
 				03DF382E2B48E01C009040AA /* DessertliousListViewModel.swift in Sources */,
 				03DF382A2B479F9A009040AA /* NetworkManager.swift in Sources */,
-				03DF38182B477A63009040AA /* DesertliousTabView.swift in Sources */,
 				03DF38162B477A63009040AA /* DesertliousApp.swift in Sources */,
 				03DF382C2B48D46E009040AA /* DLError.swift in Sources */,
 				03DF38392B491BD6009040AA /* DessertsDetailsView.swift in Sources */,
 				03DF38282B479E22009040AA /* DessertsListCell.swift in Sources */,
+				031D70B62B50DF8300A79B20 /* DessertsListModel.swift in Sources */,
 				03DF38262B478E04009040AA /* DessertModel.swift in Sources */,
 				03DF38242B477D1F009040AA /* DessertliousListView.swift in Sources */,
+				031D70B42B4FC46200A79B20 /* DessertsDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
